@@ -1,0 +1,50 @@
+genus	genus_direction_Joura2024	genus_p_value	note	metabolite	metabolite_sensors_MEBOCOST	sensor_type	genus_met_evidence_pmid	sensor_evidence_pmid	verify_flag	mimedb_id
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Acetic acid	FFAR2	Receptor	23405142	Cellinker	False	MMDBc0000011
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Acetic acid	FFAR2	Receptor	23405142	31337751; 34845033; 32997697	False	MMDBc0000011
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Propionic acid	FFAR2	Receptor	23405142	Cellinker	False	MMDBc0000080
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Propionic acid	FFAR3	Receptor	23405142	Cellinker	False	MMDBc0000080
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Butyric acid	FFAR2	Receptor	23405142	Cellinker	False	MMDBc0000010
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Butyric acid	FFAR3	Receptor	23405142	Cellinker	False	MMDBc0000010
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Butyric acid	HCAR2	Receptor	23405142	Cellinker	False	MMDBc0000010
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Porphyrins (uro/coproporphyrin III)			27303708		False	
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	5-Aminolevulinic acid	TSPO2	Transporter	27303708	31989647	False	MMDBc0029572
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Adenosylcobalamin (vitamin B12)	CUBN	Transporter	26109103	Recon2	False	MMDBc0000211
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Adenosylcobalamin (vitamin B12)	AMN	Transporter	26109103	Recon2	False	MMDBc0000211
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Heme (via porphyrin degradation)	TLR4	Receptor	39770869	33374506; 27821769	False	MMDBc0029705
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Heme (via porphyrin degradation)	TRPV6	Transporter	39770869	27142151	False	MMDBc0029705
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Heme (via porphyrin degradation)	SLC46A1	Transporter	39770869	Recon2	False	MMDBc0029705
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Heme (via porphyrin degradation)	LRP1	Transporter	39770869	Recon2	False	MMDBc0029705
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Heme (via porphyrin degradation)	NR1D1	Nuclear Receptor	39770869	https://en.wikipedia.org/wiki/Nuclear_receptor#Ligands	False	MMDBc0029705
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Heme (via porphyrin degradation)	NR1D2	Nuclear Receptor	39770869	https://en.wikipedia.org/wiki/Nuclear_receptor#Ligands	False	MMDBc0029705
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Heme (via porphyrin degradation)	SLC48A1	Transporter	39770869	18418376	False	MMDBc0029705
+Cutibacterium	n.s.	0.088	dominant (35.1% rosacea / 20.9% control)	Heme (via porphyrin degradation)	FLVCR2	Transporter	39770869	20823265	False	MMDBc0029705
+Staphylococcus	n.s.	0.152	dominant (14.0% / 8.8%)	Acetic acid	FFAR2	Receptor	23405142	Cellinker	False	MMDBc0000011
+Staphylococcus	n.s.	0.152	dominant (14.0% / 8.8%)	Acetic acid	FFAR2	Receptor	23405142	31337751; 34845033; 32997697	False	MMDBc0000011
+Staphylococcus	n.s.	0.152	dominant (14.0% / 8.8%)	Butyric acid	FFAR2	Receptor	31159213	Cellinker	False	MMDBc0000010
+Staphylococcus	n.s.	0.152	dominant (14.0% / 8.8%)	Butyric acid	FFAR3	Receptor	31159213	Cellinker	False	MMDBc0000010
+Staphylococcus	n.s.	0.152	dominant (14.0% / 8.8%)	Butyric acid	HCAR2	Receptor	31159213	Cellinker	False	MMDBc0000010
+Corynebacterium	up	0.015		Acetic acid	FFAR2	Receptor	18494871	Cellinker	False	MMDBc0000011
+Corynebacterium	up	0.015		Acetic acid	FFAR2	Receptor	18494871	31337751; 34845033; 32997697	False	MMDBc0000011
+Neisseria	up	0.023		LPS/lipid A			9851930		False	
+Faecalibacterium	down	0.0009		Butyric acid	FFAR2	Receptor	19222573	Cellinker	False	MMDBc0000010
+Faecalibacterium	down	0.0009		Butyric acid	FFAR3	Receptor	19222573	Cellinker	False	MMDBc0000010
+Faecalibacterium	down	0.0009		Butyric acid	HCAR2	Receptor	19222573	Cellinker	False	MMDBc0000010
+Bacteroides	down	0.001		Propionic acid	FFAR2	Receptor	24553467	Cellinker	False	MMDBc0000080
+Bacteroides	down	0.001		Propionic acid	FFAR3	Receptor	24553467	Cellinker	False	MMDBc0000080
+Bacteroides	down	0.001		Succinic acid	SUCNR1	Receptor	24553467	25352636; 34270263; 33916314; 26808164; 33279412; 34301438; 29894669; 34233171	False	MMDBc0000087
+Bacteroides	down	0.001		Succinic acid	SLC13A5	Transporter	24553467	31882442	False	MMDBc0000087
+Bacteroides	down	0.001		Succinic acid	TRPC6	Receptor	24553467	Cellinker	False	MMDBc0000087
+Bacteroides	down	0.001		Acetic acid	FFAR2	Receptor	19222573	Cellinker	False	MMDBc0000011
+Bacteroides	down	0.001		Acetic acid	FFAR2	Receptor	19222573	31337751; 34845033; 32997697	False	MMDBc0000011
+Prevotella	down	0.001		Succinic acid	SUCNR1	Receptor	24553467	25352636; 34270263; 33916314; 26808164; 33279412; 34301438; 29894669; 34233171	False	MMDBc0000087
+Prevotella	down	0.001		Succinic acid	SLC13A5	Transporter	24553467	31882442	False	MMDBc0000087
+Prevotella	down	0.001		Succinic acid	TRPC6	Receptor	24553467	Cellinker	False	MMDBc0000087
+Prevotella	down	0.001		Acetic acid	FFAR2	Receptor	19222573	Cellinker	False	MMDBc0000011
+Prevotella	down	0.001		Acetic acid	FFAR2	Receptor	19222573	31337751; 34845033; 32997697	False	MMDBc0000011
+Blautia	down	0.001		Acetic acid	FFAR2	Receptor	19222573	Cellinker	False	MMDBc0000011
+Blautia	down	0.001		Acetic acid	FFAR2	Receptor	19222573	31337751; 34845033; 32997697	False	MMDBc0000011
+Ruminococcus	down	0.001		Acetic acid	FFAR2	Receptor	22343308	Cellinker	False	MMDBc0000011
+Ruminococcus	down	0.001		Acetic acid	FFAR2	Receptor	22343308	31337751; 34845033; 32997697	False	MMDBc0000011
+Subdoligranulum	down	0.017		Butyric acid	FFAR2	Receptor	19222573	Cellinker	False	MMDBc0000010
+Subdoligranulum	down	0.017		Butyric acid	FFAR3	Receptor	19222573	Cellinker	False	MMDBc0000010
+Subdoligranulum	down	0.017		Butyric acid	HCAR2	Receptor	19222573	Cellinker	False	MMDBc0000010

@@ -1,0 +1,167 @@
+genus	metabolite	mime_id
+Bacteroides	(2E)-3-(2,3-dihydroxyphenyl)prop-2-enoic acid	MMDBc0054804
+Bacteroides	(2S)-2-phospholactic acid	MMDBc0054858
+Bacteroides	(2S)-4-acetamido-2-aminobutanoic acid	MMDBc0054058
+Bacteroides	(2S)-lactyl-2-diphospho-5'-guanosine	MMDBc0054059
+Bacteroides	(2Z,4Z)-2-amino-3-carboxymuconic acid 6-semialdehyde	MMDBc0054871
+Bacteroides	(3S,5S)-3,5-Diaminocaproate	MMDBc0049859
+Bacteroides	(E)-pent-2-enoic-acid_L-valine	MMDBc0061116
+Bacteroides	(R)-carnitinyl-CoA	MMDBc0055041
+Bacteroides	1-Pyrroline	MMDBc0029965
+Bacteroides	1-aminocyclopropane-1-carboxylic acid	MMDBc0054708
+Bacteroides	2,3-dimethylbutyric-acid_glycolic-acid_Tyramine	MMDBc0061176
+Bacteroides	2-Dehydro-3-deoxy-L-rhamnonate	MMDBc0031723
+Bacteroides	2-Hydroxyglutarate	MMDBc0000675
+Bacteroides	2-Keto-3-deoxy-D-gluconic acid	MMDBc0000388
+Bacteroides	2-O-(alpha-D-mannosyl)-3-phosphoglyceric acid	MMDBc0055262
+Bacteroides	2-Succinylbenzoyl-CoA	MMDBc0029983
+Bacteroides	2-phenethylamine-C4:0	MMDBc0061223
+Bacteroides	3-Hydroxycinnamic acid	MMDBc0030307
+Bacteroides	3-Hydroxypropanal	MMDBc0049986
+Bacteroides	3-heptaprenyl-sn-glycero-1-phosphate	MMDBc0055367
+Bacteroides	3a,12a-7-OAc-dihydroxy-5b-cholanoic-acid_(R,Z)-12-hydroxyoctadec-9-enoic-acid_3-hydroxybutanoic-acid	MMDBc0060503
+Bacteroides	4-Hydroxyphenylacetyl-CoA	MMDBc0049878
+Bacteroides	5,6,7,8-Tetrahydromethanopterin	MMDBc0049856
+Bacteroides	5-amino-5-(4-hydroxybenzyl)-6-(D-ribitylimino)-5,6-dihydrouracil	MMDBc0055551
+Bacteroides	7,8-didemethyl-8-hydroxy-5-deazariboflavin	MMDBc0055627
+Bacteroides	ADP-5-ethyl-4-methylthiazole-2-carboxylate	MMDBc0052849
+Bacteroides	Arginine-C10:0	MMDBc0061326
+Bacteroides	Arginine-C8:0	MMDBc0061335
+Bacteroides	Asparagine-C18:0	MMDBc0061343
+Bacteroides	CDP-2,3-bis-O-(geranylgeranyl)-sn-glycerol	MMDBc0055790
+Bacteroides	Chitin	MMDBc0000235
+Bacteroides	Cholic-acid_3-hydroxybutanoic-acid_2-hydroxytetradecanoic-acid_L-isoleucine	MMDBc0060564
+Bacteroides	Cis-3-(3-carboxyethyl)-3,5-cyclohexadiene-1,2-diol	MMDBc0031650
+Bacteroides	Citrulline-C16:0	MMDBc0060997
+Bacteroides	Cu(+)	MMDBc0031139
+Bacteroides	Cytidine diphosphate ribitol	MMDBc0007571
+Bacteroides	D-Galactonate	MMDBc0030057
+Bacteroides	D-Glutamic acid	MMDBc0000233
+Bacteroides	D-Malic acid	MMDBc0000275
+Bacteroides	D-tagatofuranose 6-phosphate	MMDBc0032128
+Bacteroides	Decanoic-acid_L-arginine	MMDBc0061381
+Bacteroides	Diacetylchitobiose-6-phosphate	MMDBc0030183
+Bacteroides	Diketogulonic acid	MMDBc0047946
+Bacteroides	Ectoine	MMDBc0000763
+Bacteroides	Formyl-CoA	MMDBc0029711
+Bacteroides	GABA-C6:0	MMDBc0061397
+Bacteroides	Gln-C16:0	MMDBc0061008
+Bacteroides	Glu-C15:0	MMDBc0061012
+Bacteroides	Glyco-3-alpha-6-alpha-12-alpha-hyocholic-acid_12-hydroxyoctadecanoic-acid_3-hydroxybutanoic-acid	MMDBc0060599
+Bacteroides	Hyocholic-acid_3-hydroxybutanoic-acid_12-hydroxyoctadecanoic-acid_glycine	MMDBc0060617
+Bacteroides	Hyocholyl-glycine_12-hydroxyoctadecanoic-acid_3-hydroxybutanoic-acid	MMDBc0060619
+Bacteroides	Icosanoic-acid_L-aspartate	MMDBc0061460
+Bacteroides	Inulobiose	MMDBc0000272
+Bacteroides	L-Ascorbate 6-phosphate	MMDBc0030072
+Bacteroides	Leucine-C10:0	MMDBc0061462
+Bacteroides	Lycopene	MMDBc0053429
+Bacteroides	Methionine-C5:0	MMDBc0061516
+Bacteroides	Methylamine	MMDBc0000052
+Bacteroides	N'-monoacetylchitobiose-6'-phosphate	MMDBc0053493
+Bacteroides	N(2)-(1-hydroxy-2-oxoethyl)-GDP	MMDBc0056169
+Bacteroides	N(2)-(1-hydroxy-2-oxoethyl)-GMP	MMDBc0056170
+Bacteroides	N(2)-(1-hydroxy-2-oxoethyl)-GTP	MMDBc0056171
+Bacteroides	N(2)-(1-hydroxy-2-oxoethyl)-dGTP	MMDBc0056168
+Bacteroides	N(2)-(1-hydroxy-2-oxopropyl)-GDP	MMDBc0056173
+Bacteroides	N(2)-(1-hydroxy-2-oxopropyl)-GMP	MMDBc0056174
+Bacteroides	N(2)-(1-hydroxy-2-oxopropyl)-GTP	MMDBc0056175
+Bacteroides	N(2)-(1-hydroxy-2-oxopropyl)-dGTP	MMDBc0056172
+Bacteroides	N(5)-formyl-5,6,7,8-tetrahydromethanopterin	MMDBc0048042
+Bacteroides	N-Butyrylglycine	MMDBc0000549
+Bacteroides	N-Myristoyl-L-Lysine	MMDBc0061028
+Bacteroides	Octanoic-acid_L-tryptophan	MMDBc0061533
+Bacteroides	Oleic acid	MMDBc0000066
+Bacteroides	Ornithine-C17:1	MMDBc0061545
+Bacteroides	Oxalyl-CoA	MMDBc0030086
+Bacteroides	Peroxynitrite	MMDBc0049845
+Bacteroides	Phenylacetaldehyde	MMDBc0048003
+Bacteroides	Pimelic acid	MMDBc0000159
+Bacteroides	Piperideine	MMDBc0049864
+Bacteroides	Precorrin 3 A	MMDBc0049862
+Bacteroides	Pseudouridine 5'-phosphate	MMDBc0029604
+Bacteroides	Quinate	MMDBc0030336
+Bacteroides	Saccharopine	MMDBc0000510
+Bacteroides	TG(12:0/12:0/12:0)	MMDBc0000306
+Bacteroides	Trp-C15:0	MMDBc0061050
+Bacteroides	Tyrosine-C6:0	MMDBc0061651
+Bacteroides	UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-gamma-D-glutamyl-L-lysine	MMDBc0056360
+Bacteroides	Undecaprenyl-diphospho N-acetylglucosamine-N-acetylmannosaminuronate-N-acetamido-4,6-dideoxy-D-galactose	MMDBc0031641
+Bacteroides	aldehydo-D-galactose 6-phosphate	MMDBc0054325
+Bacteroides	alpha-Kdo-(2->6)-lipid IVA	MMDBc0054339
+Bacteroides	beta-Carotene	MMDBc0000528
+Bacteroides	butanoic acid	MMDBc0054375
+Bacteroides	cob(II)yrinate	MMDBc0054401
+Bacteroides	dTDP-4-acetamido-4,6-dideoxy-alpha-D-galactose	MMDBc0031950
+Bacteroides	enolpyruvoyl-2-diphospho-5'-guanosine	MMDBc0055966
+Bacteroides	harderoheme III	MMDBc0056021
+Bacteroides	heptanedioic acid	MMDBc0054503
+Bacteroides	keto-D-tagatose 6-phosphate	MMDBc0054523
+Bacteroides	lactic acid	MMDBc0056071
+Bacteroides	oxalate	MMDBc0054618
+Bacteroides	oxidized coenzyme F420-0	MMDBc0056240
+Blautia	2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate	MMDBc0029977
+Blautia	2-oxobutanoic acid	MMDBc0054184
+Blautia	3-Carboxy-4-methyl-2-oxopentanoate	MMDBc0049885
+Blautia	4,5-Dihydroxy-2,3-pentanedione	MMDBc0030185
+Blautia	5-Carboxymethyl-2-hydroxymuconate	MMDBc0049959
+Blautia	7-Methylguanosine 5'-phosphate	MMDBc0033130
+Blautia	7b hydroxy 5b cholan-24-oic acid_4-amino phenol	MMDBc0060531
+Blautia	Amylose	MMDBc0000299
+Blautia	D-Xylose	MMDBc0000026
+Blautia	FruLeuIle	MMDBc0060770
+Blautia	Glycerophosphoglycerol	MMDBc0000724
+Blautia	L-Fucose	MMDBc0000057
+Blautia	Leucine-C4:0	MMDBc0061478
+Blautia	Methanethiol	MMDBc0032913
+Blautia	Oxidized glutathione	MMDBc0047940
+Blautia	Tetradecanedioic-acid_3-methoxy-1-propanol	MMDBc0060967
+Blautia	UDP-N-Acetyl-D-mannosaminouronate	MMDBc0031640
+Corynebacterium	2-Methylacetoacetyl-CoA	MMDBc0032880
+Corynebacterium	3-Oxotetradecanoyl-CoA	MMDBc0029736
+Corynebacterium	Indolepyruvate	MMDBc0031706
+Faecalibacterium	2-Methylcitric acid	MMDBc0031986
+Faecalibacterium	Allantoic acid	MMDBc0029590
+Faecalibacterium	Methylcitric acid	MMDBc0029507
+Neisseria	L-Cysteine	MMDBc0000117
+Neisseria	thiamine phosphate	MMDBc0054676
+Prevotella	(6R)-5,10-methylene-5,6,7,8-tetrahydrofolic acid	MMDBc0054976
+Prevotella	(S)-4-Amino-5-oxopentanoate	MMDBc0029954
+Prevotella	1-Piperideine-2-carboxylic acid	MMDBc0047920
+Prevotella	2-deoxy-alpha-D-ribose 1-phosphate	MMDBc0054164
+Prevotella	4-Hydroxyphenylpyruvic acid	MMDBc0000535
+Prevotella	6,7-Dimethyl-8-(1-D-ribityl)lumazine	MMDBc0029731
+Prevotella	Allysine	MMDBc0032966
+Prevotella	Galactitol	MMDBc0000027
+Prevotella	Glycocholic acid	MMDBc0000040
+Prevotella	L-Histidinal	MMDBc0031707
+Prevotella	L-Xylulose	MMDBc0000149
+Prevotella	Malonyl-CoA	MMDBc0029578
+Prevotella	N-Acetyl-glucosamine 1-phosphate	MMDBc0029632
+Prevotella	N-acetyl-alpha-D-glucosamine 1-phosphate	MMDBc0033114
+Prevotella	Quinolinic acid	MMDBc0000507
+Prevotella	Tetrahydrofolic acid	MMDBc0029674
+Prevotella	adenosylcob(III)alamin 5'-phosphate	MMDBc0055683
+Prevotella	adenosylcob(III)inamide-GDP	MMDBc0055685
+Prevotella	alpha-ribazole	MMDBc0054343
+Prevotella	coenzyme B12	MMDBc0052969
+Prevotella	myo-Inositol 6-phosphate	MMDBc0000224
+Ruminococcus	(S)-3-Hydroxydodecanoyl-CoA	MMDBc0029737
+Ruminococcus	(S)-Hydroxydecanoyl-CoA	MMDBc0029739
+Ruminococcus	5-Hydroxyisourate	MMDBc0031761
+Ruminococcus	5-enolpyruvoyl-6-hydroxy-2-succinyl-cyclohex-3-ene-1-carboxylic acid	MMDBc0055560
+Ruminococcus	5-methyltetrahydropteroyltri-L-glutamate	MMDBc0031149
+Ruminococcus	Ciliatine	MMDBc0000652
+Ruminococcus	Cis-2-Methylaconitate	MMDBc0029828
+Ruminococcus	L-Allysine	MMDBc0033099
+Ruminococcus	Precorrin 6A	MMDBc0049854
+Ruminococcus	tetrahydropteroyltri-L-glutamate	MMDBc0031150
+Staphylococcus	(R)-acetoin	MMDBc0000283
+Staphylococcus	4-(Cytidine 5'-diphospho)-2-C-methyl-D-erythritol	MMDBc0030011
+Staphylococcus	4-Hydroxyproline	MMDBc0000770
+Staphylococcus	Adenosyl cobinamide phosphate	MMDBc0029918
+Staphylococcus	Dethiobiotin	MMDBc0029726
+Staphylococcus	Histamine	MMDBc0000161
+Staphylococcus	Tryptamine	MMDBc0000096
+Staphylococcus	UDP-N-Acetyl-D-mannosamine	MMDBc0030103
+Staphylococcus	alpha,alpha-Trehalose 6-phosphate	MMDBc0029756
+Subdoligranulum	Maltohexaose	MMDBc0000302

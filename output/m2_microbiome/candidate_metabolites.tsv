@@ -1,0 +1,8 @@
+metabolite	sensors	producing_genera
+5-Aminolevulinic acid	TSPO2	Cutibacterium
+Acetic acid	FFAR2	Bacteroides;Blautia;Corynebacterium;Cutibacterium;Prevotella;Ruminococcus;Staphylococcus
+Adenosylcobalamin (vitamin B12)	AMN;CUBN	Cutibacterium
+Butyric acid	FFAR2;FFAR3;HCAR2	Cutibacterium;Faecalibacterium;Staphylococcus;Subdoligranulum
+Heme (via porphyrin degradation)	FLVCR2;LRP1;NR1D1;NR1D2;SLC46A1;SLC48A1;TLR4;TRPV6	Cutibacterium
+Propionic acid	FFAR2;FFAR3	Bacteroides;Cutibacterium
+Succinic acid	SLC13A5;SUCNR1;TRPC6	Bacteroides;Prevotella

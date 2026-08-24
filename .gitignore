@@ -1,0 +1,38 @@
+# raw data (public, re-downloadable — not redistributed)
+data/prjna1189573/fastq/
+data/gse65914/CEL/
+data/silva/*.qza
+data/silva/extracted_*/
+data/silva/*.fa.gz
+data/mimedb/*.csv
+data/mimedb/*.zip
+data/mimedb/*.tar.gz
+data/MEBOCOST-main/
+data/cibersort/*.pdf
+data/hra006167/chen_suppdata/*.pdf
+.venv-mebocost/
+logs/
+*.aria2
+.DS_Store
+# confidential pre-publication material (kept out of the public repo)
+revised_manuscript.md
+Response_Letter_框架.md
+Supplementary_草稿.md
+*_草稿.md
+进度报告*.md
+邮件无回复时的备选方案.md
+邮件草稿*.docx
+# large derived/raw artifacts (rebuildable; sources documented in README)
+data/gse65914/GSE65914_RAW.tar
+data/gse65914/GSE65914_series_matrix.txt
+data/MEBOCOST.zip
+output/m2_microbiome/idtaxa_training.rds
+# compress large TSVs for the public repo (gzipped versions committed)
+output/m4_bulk/expr_matrix.tsv
+output/m4_bulk/DEG_*.tsv
+output/m4_bulk/cibersort_fractions.tsv
+data/gse65914/GSE65914_series_matrix.txt.gz
+# confidential drafts (absolute exclusions)
+邮件_*.md
+.~*
+Rplots.pdf

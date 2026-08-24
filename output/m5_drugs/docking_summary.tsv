@@ -1,0 +1,5 @@
+drug	target	target_structure	best_affinity_kcal_mol	note
+ramatroban (CRTH2/DP2 antagonist)	PTGDR2 (CRTH2/DP2)	AlphaFold AF-Q9Y5Y4-F1	-11.221	AutoDock Vina 1.2.7, exhaustiveness 32, 9 modes
+setipiprant (CRTH2/DP2 antagonist)	PTGDR2 (CRTH2/DP2)	AlphaFold AF-Q9Y5Y4-F1	-11.811	AutoDock Vina 1.2.7, exhaustiveness 32, 9 modes
+TAK-242/resatorvid (TLR4 inhibitor)	TLR4 (TIR domain)	PDB 4G8A	-4.22	AutoDock Vina 1.2.7, exhaustiveness 32, 9 modes
+doxycycline (MMP inhibitor)	MMP9 (catalytic domain)	PDB 1L6J	-3.254	AutoDock Vina 1.2.7, exhaustiveness 32, 9 modes
