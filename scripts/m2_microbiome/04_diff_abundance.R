@@ -9,9 +9,15 @@ setwd("data/prjna1189573")
 seqtab <- readRDS("../../output/m2_microbiome/seqtab_nochim.rds")
 taxa <- read.delim("../../output/m2_microbiome/taxonomy.tsv", row.names = 1)
 
-genus <- taxa[colnames(seqtab), "Genus"]
+# remove plant-organelle ASVs (chloroplast/mitochondria)
+is_org <- grepl("Chloroplast|Mitochondria", taxa[colnames(seqtab), "Order"]) | 
+          grepl("Chloroplast|Mitochondria", taxa[colnames(seqtab), "Family"])
+is_org[is.na(is_org)] <- FALSE
+seqtab2 <- seqtab[, !is_org, drop = FALSE]
+cat("ASVs removed (plant organelles):", sum(is_org), "\n")
+genus <- taxa[colnames(seqtab2), "Genus"]
 genus[is.na(genus) | genus == "NA"] <- "Unclassified"
-gcounts <- t(rowsum(t(seqtab), group = genus, reorder = TRUE))
+gcounts <- t(rowsum(t(seqtab2), group = genus, reorder = TRUE))
 grel <- sweep(gcounts, 1, rowSums(gcounts), "/")
 
 # median genus table (all samples)

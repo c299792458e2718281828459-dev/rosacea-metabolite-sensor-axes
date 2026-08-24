@@ -40,3 +40,13 @@ logs/              run logs
 - CIBERSORT permutations: 20260824
 - GSEA: 20260824
 - Docking: 20260824
+
+## Note on 16S taxonomy
+
+Genus-level taxonomic assignments (`output/m2_microbiome/taxonomy.tsv`) were generated
+with an IdTaxa classifier trained on a reference that was trimmed to the 5' 400 bp
+(V1-V3 region) of SILVA full-length sequences, whereas the amplicon data are V3-V4.
+Because of this reference-region mismatch, these assignments are NOT used in the
+manuscript; genus-level differential results are taken from the published statistics
+of the source cohort (Joura et al. 2024, Table 2). The DADA2 read statistics
+(`output/m2_microbiome/track.tsv`) are unaffected and are reported in the manuscript.
