@@ -36,3 +36,4 @@ data/gse65914/GSE65914_series_matrix.txt.gz
 邮件_*.md
 .~*
 Rplots.pdf
+output/m2_microbiome/idtaxa_v34_training.rds

@@ -38,16 +38,21 @@ for m in order:
         d = mets[m]["genera"][g]
         ax.scatter(x, y, s=120, color=dir_color[d], zorder=3,
                    edgecolors="white", linewidths=0.5)
-        ax.text(x, y - 0.32, g, ha="center", va="top", fontsize=6.5, rotation=30)
+        ax.text(x, y - 0.32, g, ha="center", va="top", fontsize=6, rotation=25)
         x += 1
     sens = sorted(mets[m]["sensors"])
-    xs = x + 0.8
-    for i, s in enumerate(sens):
-        ax.text(xs + i * 0.9, y, s, fontsize=8, color="#4a148c", va="center")
+    import textwrap
+    sens_label = "; ".join(sens)
+    wrapped = textwrap.wrap(sens_label, width=44)
+    xs = x + 0.9
+    n = len(wrapped)
+    for i, line in enumerate(wrapped):
+        off = (i - (n - 1) / 2) * 0.42
+        ax.text(xs, y + off, line, fontsize=7.5, color="#4a148c", va="center", ha="left")
     y += 1
 
-ax.set_ylim(-0.7, y - 0.4)
-ax.set_xlim(-6, 24)
+ax.set_ylim(-0.8, y - 0.2)
+ax.set_xlim(-6, 32)
 ax.axis("off")
 # legend
 for lab, c in [("genus up in rosacea", "#c62828"), ("genus down in rosacea", "#1565c0"),
@@ -59,7 +64,7 @@ h2 = mlines.Line2D([], [], marker="o", ls="", color="#1565c0", label="genus depl
 h3 = mlines.Line2D([], [], marker="o", ls="", color="#757575", label="dominant, not significant (Joura 2024)")
 h4 = mlines.Line2D([], [], marker="s", ls="", color="#4a148c", label="sensor (MEBOCOST DB)")
 ax.legend(handles=[h1, h2, h3, h4], loc="upper right", fontsize=8, frameon=False)
-ax.set_title("Figure 3. Candidate microbial metabolites: producing genera and annotated human sensors", fontsize=10, loc="left")
+ax.set_title("Figure 2. Candidate microbial metabolites: producing genera and annotated human sensors", fontsize=10, loc="left")
 plt.tight_layout()
 plt.savefig("output/figures/Fig3_candidate_metabolites.png", bbox_inches="tight", dpi=300)
 print("Fig3 saved")

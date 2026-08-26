@@ -41,12 +41,15 @@ logs/              run logs
 - GSEA: 20260824
 - Docking: 20260824
 
-## Note on 16S taxonomy
+## Note on 16S re-analysis (updated 2026-08-26)
 
-Genus-level taxonomic assignments (`output/m2_microbiome/taxonomy.tsv`) were generated
-with an IdTaxa classifier trained on a reference that was trimmed to the 5' 400 bp
-(V1-V3 region) of SILVA full-length sequences, whereas the amplicon data are V3-V4.
-Because of this reference-region mismatch, these assignments are NOT used in the
-manuscript; genus-level differential results are taken from the published statistics
-of the source cohort (Joura et al. 2024, Table 2). The DADA2 read statistics
-(`output/m2_microbiome/track.tsv`) are unaffected and are reported in the manuscript.
+The deposited skin samples of PRJNA1189573 were re-processed with DADA2 and classified
+with an IdTaxa classifier trained on a V3-V4 primer-extracted SILVA v138.1 reference
+(301,898 sequences; `data/silva/silva_train_v34.fa.gz`, built from `silva_train_7rank.fa.gz`
+by 341F/806R primer matching). The resulting composition was dominated by Escherichia
+(the five most abundant ASVs match Escherichia coli/fergusonii at 100% identity in BLAST
+against NCBI nt), which does not reproduce the published genus composition of the same
+cohort (Joura et al. 2024: Cutibacterium-dominant). This discrepancy is reported in the
+manuscript as a reproducibility caveat; genus-level differential results in the manuscript
+are taken from the published study (Table 2). The earlier V1-V3-region training set
+(`silva_train_acgt.fa.gz`) is superseded by the V3-V4 set.
