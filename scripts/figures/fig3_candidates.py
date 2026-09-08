@@ -36,9 +36,9 @@ for m in order:
     x = 0
     for g in gen:
         d = mets[m]["genera"][g]
-        ax.scatter(x, y, s=120, color=dir_color[d], zorder=3,
+        ax.scatter(x, y, s=110, color=dir_color[d], zorder=3,
                    edgecolors="white", linewidths=0.5)
-        ax.text(x, y - 0.32, g, ha="center", va="top", fontsize=6, rotation=25)
+        ax.text(x, y - 0.22, g, ha="center", va="top", fontsize=6, rotation=25)
         x += 1
     sens = sorted(mets[m]["sensors"])
     import textwrap
@@ -49,9 +49,9 @@ for m in order:
     for i, line in enumerate(wrapped):
         off = (i - (n - 1) / 2) * 0.42
         ax.text(xs, y + off, line, fontsize=7.5, color="#4a148c", va="center", ha="left")
-    y += 1
+    y += 1.45
 
-ax.set_ylim(-0.8, y - 0.2)
+ax.set_ylim(-0.9, y - 0.55)
 ax.set_xlim(-6, 32)
 ax.axis("off")
 # legend
