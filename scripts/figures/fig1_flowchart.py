@@ -9,8 +9,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 
-fig, ax = plt.subplots(figsize=(14.6, 11), dpi=300)
-ax.set_xlim(-0.9, 14.4); ax.set_ylim(0, 11); ax.axis("off")
+fig, ax = plt.subplots(figsize=(16, 11.2), dpi=300)
+ax.set_xlim(-0.9, 16.0); ax.set_ylim(0, 11.2); ax.axis("off")
 
 def box(x, y, w, h, text, fc="#eef3fb", ec="#1b5a94", fs=8.5, lw=1.2):
     ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.08",
@@ -68,23 +68,27 @@ arrow(c4c, r2, c4c, r3+h3)
 arrow(c4, r3+h3/2, c3+w, r3+h3/2)
 flabel((c4+c3+w)/2, r3+h3/2+0.42, "5-ALA")
 
-# ================= routed connectors =================
-# published genus stats -> M2b (left-margin bus; three straight segments)
-arrow(c4c, r1, -0.45, r1+h1/2)
-arrow(-0.45, r1+h1/2, -0.45, r4+h4/2)
-arrow(-0.45, r4+h4/2, c1, r4+h4/2)
-flabel(-0.45, 7.6, "genus differential status (P values)", rot=90, fs=7.2)
+# ================= routed connectors (margin channels only; no box crossings) =================
+# 1) published genus stats -> M2b (over the top margin, down the left margin)
+arrow(c4c, r1+h1, c4c, 10.75)                       # up from pub-stats top
+arrow(c4c, 10.75, -0.45, 10.75)                     # across the top margin
+arrow(-0.45, 10.75, -0.45, r4+h4/2)                 # down the left margin
+arrow(-0.45, r4+h4/2, c1, r4+h4/2)                  # into M2b left edge
+flabel(-0.45, 7.7, "genus differential status (P values)", rot=90, fs=7.2)
 
-# M2b -> M2c (right-margin bus: metabolite list)
-arrow(c1+w, r4+h4*0.55, 14.05, r4+h4*0.55)
-arrow(14.05, r4+h4*0.55, 14.05, r2+h2/2)
-arrow(14.05, r2+h2/2, c3+w, r2+h2/2)
-flabel(14.05, 4.6, "metabolite list\n(49 evidence links)", rot=90, fs=7.2)
+# 2) M2b -> M2c (down, across the r4-r5 strip, up the right margin, over the r1-r2 strip, into M2c)
+arrow(c1c, r4, c1c, 2.85)                           # down from M2b bottom
+arrow(c1c, 2.85, 15.35, 2.85)                       # across the free strip below row 4
+arrow(15.35, 2.85, 15.35, 8.42)                     # up the right margin (right of all c4 boxes)
+arrow(15.35, 8.42, c3+w, 8.42)                      # across the free strip above row 2
+arrow(c3+w, 8.42, c3+w, r2+h2)                      # down into M2c right edge
+flabel(15.35, 5.7, "metabolite list\n(49 evidence links)", rot=90, fs=7.2)
 
-# M2c -> M4b (sensor gene list, through the empty strip between rows 3 and 4)
-arrow(c3, r2, 6.0, 4.85)
-arrow(6.0, 4.85, c2c, r4+h4)
-flabel(6.0, 4.55, "sensor gene list (413)", fs=7.2)
+# 3) M2c -> M4b (sensor gene list; via the gap between columns 3 and 4, then the r3-r4 strip)
+arrow(c3+w, r2+0.3, 10.95, 4.82)                    # down through the c3-c4 gap
+arrow(10.95, 4.82, c2c, 4.82)                       # left across the r3-r4 strip
+arrow(c2c, 4.82, c2c, r4+h4)                        # into M4b top edge
+flabel(8.2, 4.97, "sensor gene list (413)", fs=6.8)
 
 # M4a -> M4c/M4d is vertical (drawn above); M4a also feeds axes evidence via Table 2 text (no arrow)
 
