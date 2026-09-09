@@ -38,13 +38,13 @@ filter_status = {
     "Adenosylcobalamin (vitamin B12)": ("\u25a1", "no concordant circulating signal"),
 }
 
-fig, ax = plt.subplots(figsize=(11, 6.5), dpi=300)
+fig, ax = plt.subplots(figsize=(7.2, 5.2), dpi=600)
 y = 0
 yt = {}
 for m in order:
     yt[m] = y
     sym = filter_status.get(m, ("", ""))[0]
-    ax.text(-0.6, y, f"{sym}  {m}", ha="right", va="center", fontsize=9)
+    ax.text(-0.55, y, f"{sym}  {m}", ha="right", va="center", fontsize=7.5)
     gen = sorted(mets[m]["genera"], key=lambda g: -genus_dir[g].count("d"))
     x = 0
     for g in gen:
@@ -52,21 +52,21 @@ for m in order:
         ax.scatter(x, y, s=110, color=dir_color[d], zorder=3,
                    edgecolors="white", linewidths=0.5)
         # label's right end centered below the circle (per reviewer)
-        ax.text(x + 0.08, y - 0.2, g, ha="right", va="top", fontsize=6, rotation=25)
-        x += 1
+        ax.text(x + 0.06, y - 0.18, g, ha="right", va="top", fontsize=6.5, rotation=25)
+        x += 1.15
     sens = sorted(mets[m]["sensors"])
     import textwrap
     sens_label = "; ".join(sens)
-    wrapped = textwrap.wrap(sens_label, width=44)
+    wrapped = textwrap.wrap(sens_label, width=46)
     xs = x + 0.9
     n = len(wrapped)
     for i, line in enumerate(wrapped):
         off = (i - (n - 1) / 2) * 0.42
-        ax.text(xs, y + off, line, fontsize=7.5, color="#4a148c", va="center", ha="left")
+        ax.text(xs, y + off, line, fontsize=7, color="#4a148c", va="center", ha="left")
     y += 1.45
 
 ax.set_ylim(-0.9, y - 0.55)
-ax.set_xlim(-6, 32)
+ax.set_xlim(-5.5, 20)
 ax.axis("off")
 # legend
 for lab, c in [("genus up in rosacea", "#c62828"), ("genus down in rosacea", "#1565c0"),
