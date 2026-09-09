@@ -38,7 +38,7 @@ filter_status = {
     "Adenosylcobalamin (vitamin B12)": ("\u25a1", "no concordant circulating signal"),
 }
 
-fig, ax = plt.subplots(figsize=(7.2, 5.2), dpi=600)
+fig, ax = plt.subplots(figsize=(7.2, 5.6), dpi=600)
 y = 0
 yt = {}
 for m in order:
@@ -47,12 +47,13 @@ for m in order:
     ax.text(-0.55, y, f"{sym}  {m}", ha="right", va="center", fontsize=7.5)
     gen = sorted(mets[m]["genera"], key=lambda g: -genus_dir[g].count("d"))
     x = 0
-    for g in gen:
+    for i, g in enumerate(gen):
         d = mets[m]["genera"][g]
-        ax.scatter(x, y, s=110, color=dir_color[d], zorder=3,
+        ax.scatter(x, y, s=100, color=dir_color[d], zorder=3,
                    edgecolors="white", linewidths=0.5)
-        # label's right end centered below the circle (per reviewer)
-        ax.text(x + 0.06, y - 0.18, g, ha="right", va="top", fontsize=6.5, rotation=25)
+        # staggered two-level horizontal labels, centered under each circle
+        lvl = -0.22 if i % 2 == 0 else -0.62
+        ax.text(x, y + lvl, g, ha="center", va="top", fontsize=6.5)
         x += 1.15
     sens = sorted(mets[m]["sensors"])
     import textwrap
@@ -63,7 +64,7 @@ for m in order:
     for i, line in enumerate(wrapped):
         off = (i - (n - 1) / 2) * 0.42
         ax.text(xs, y + off, line, fontsize=7, color="#4a148c", va="center", ha="left")
-    y += 1.45
+    y += 1.6
 
 ax.set_ylim(-0.9, y - 0.55)
 ax.set_xlim(-5.5, 20)
