@@ -22,7 +22,7 @@ def arrow(x1, y1, x2, y2, color="#555555", style="-|>", lw=1.3, ls="-", conn=Non
                                  mutation_scale=13, lw=lw, color=color, linestyle=ls,
                                  connectionstyle=conn or "arc3,rad=0"))
 
-def flabel(x, y, text, color="#444444", fs=7.5, rot=0):
+def flabel(x, y, text, color="#444444", fs=9, rot=0):
     ax.text(x, y, text, ha="center", va="center", fontsize=fs, color=color,
             rotation=rot, bbox=dict(boxstyle="round,pad=0.18", fc="white", ec="none", alpha=0.95))
 
@@ -66,7 +66,7 @@ box(c4, r3, w, h3, "Supporting metabolomics filter\nintersect candidate list wit
 arrow(c4c, r2, c4c, r3+h3)
 # filter -> candidate set (short horizontal)
 arrow(c4, r3+h3/2, c3+w, r3+h3/2)
-flabel((c4+c3+w)/2, r3+h3/2+0.42, "5-ALA")
+flabel((c4+c3+w)/2, r3+h3/2+0.45, "5-ALA", fs=9)
 
 # ================= routed connectors (margin channels only; no box crossings) =================
 # 1) published genus stats -> M2b (over the top margin, down the left margin)
@@ -74,7 +74,7 @@ arrow(c4c, r1+h1, c4c, 10.75)                       # up from pub-stats top
 arrow(c4c, 10.75, -0.45, 10.75)                     # across the top margin
 arrow(-0.45, 10.75, -0.45, r4+h4/2)                 # down the left margin
 arrow(-0.45, r4+h4/2, c1, r4+h4/2)                  # into M2b left edge
-flabel(-0.45, 7.7, "genus differential status (P values)", rot=90, fs=7.2)
+flabel(-0.45, 7.7, "genus differential status (P values)", rot=90, fs=9.5)
 
 # 2) M2b -> M2c (down, across the r4-r5 strip, up the right margin, over the r1-r2 strip, into M2c)
 arrow(c1c, r4, c1c, 2.85)                           # down from M2b bottom
@@ -82,23 +82,15 @@ arrow(c1c, 2.85, 15.35, 2.85)                       # across the free strip belo
 arrow(15.35, 2.85, 15.35, 8.42)                     # up the right margin (right of all c4 boxes)
 arrow(15.35, 8.42, c3+w, 8.42)                      # across the free strip above row 2
 arrow(c3+w, 8.42, c3+w, r2+h2)                      # down into M2c right edge
-flabel(15.35, 5.7, "metabolite list\n(49 evidence links)", rot=90, fs=7.2)
+flabel(15.35, 5.7, "metabolite list\n(49 evidence links)", rot=90, fs=9.5)
 
 # 3) M2c -> M4b (sensor gene list; via the gap between columns 3 and 4, then the r3-r4 strip)
 arrow(c3+w, r2+0.3, 10.95, 4.82)                    # down through the c3-c4 gap
 arrow(10.95, 4.82, c2c, 4.82)                       # left across the r3-r4 strip
 arrow(c2c, 4.82, c2c, r4+h4)                        # into M4b top edge
-flabel(8.2, 4.97, "sensor gene list (413)", fs=6.8)
+flabel(8.2, 4.97, "sensor gene list (413)", fs=9)
 
 # M4a -> M4c/M4d is vertical (drawn above); M4a also feeds axes evidence via Table 2 text (no arrow)
-
-# caption
-ax.text(-0.45, 0.35,
-        "Figure 1. Data sources, filtering steps, and information flow of the study. Each underlying data source is shown at the top;\n"
-        "each processing step shows the size of the intermediate dataset it produces; labels on routed connectors state what is passed.\n"
-        "The scRNA-seq module was removed because the controlled-access dataset (GSA: HRA006167) was not granted; cell-type localization\n"
-        "is cited from published results. The published metabolomics tables serve as a supporting filter on the candidate set.",
-        fontsize=8.5, va="bottom", ha="left")
 
 plt.tight_layout()
 plt.savefig("output/figures/Fig1_flowchart.png", dpi=300, bbox_inches="tight")

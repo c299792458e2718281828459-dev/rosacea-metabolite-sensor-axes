@@ -26,19 +26,33 @@ for r in rows:
 
 order = sorted(mets, key=lambda m: -len(mets[m]["genera"]))
 
-fig, ax = plt.subplots(figsize=(10, 6), dpi=300)
+# metabolomics-filter status per candidate (per R3 comment)
+# ▲ concordant circulating signal; ○ not measurable by untargeted LC-MS (volatile SCFA); □ measurable, no concordant signal
+filter_status = {
+    "Acetic acid": ("\u25cb", "not measurable (volatile SCFA)"),
+    "Propionic acid": ("\u25cb", "not measurable (volatile SCFA)"),
+    "Butyric acid": ("\u25cb", "not measurable (volatile SCFA)"),
+    "Succinic acid": ("\u25b2", "up in rosacea serum (Li 2025, log2FC = 0.50, P = 1e-4)"),
+    "5-Aminolevulinic acid": ("\u25b2", "up in PPR plasma (Zhang 2025)"),
+    "Heme": ("\u25a1", "no concordant circulating signal"),
+    "Adenosylcobalamin (vitamin B12)": ("\u25a1", "no concordant circulating signal"),
+}
+
+fig, ax = plt.subplots(figsize=(11, 6.5), dpi=300)
 y = 0
 yt = {}
 for m in order:
     yt[m] = y
-    ax.text(-0.4, y, m, ha="right", va="center", fontsize=9)
+    sym = filter_status.get(m, ("", ""))[0]
+    ax.text(-0.6, y, f"{sym}  {m}", ha="right", va="center", fontsize=9)
     gen = sorted(mets[m]["genera"], key=lambda g: -genus_dir[g].count("d"))
     x = 0
     for g in gen:
         d = mets[m]["genera"][g]
         ax.scatter(x, y, s=110, color=dir_color[d], zorder=3,
                    edgecolors="white", linewidths=0.5)
-        ax.text(x, y - 0.22, g, ha="center", va="top", fontsize=6, rotation=25)
+        # label's right end centered below the circle (per reviewer)
+        ax.text(x + 0.08, y - 0.2, g, ha="right", va="top", fontsize=6, rotation=25)
         x += 1
     sens = sorted(mets[m]["sensors"])
     import textwrap
